@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newsletter-sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="sm:h-screen sm:flex align-middle sm:px-4 sm:bg-[#242742]">
+    <div
+      id="app-wraper"
+      class="mx-auto max-w-md text-[#36384e] sm:flex flex-row-reverse sm:items-center sm:max-w-2xl sm:h-2/3 sm:my-auto bg-white sm:p-4 sm:rounded-3xl"
+    >
+      <div
+        id="top-section"
+        class="rounded-b-xl relative sm:bg-[url('./assets/illustration-sign-up-desktop.svg')] bg-no-repeat bg-cover sm:max-w-[60%] sm:min-h-full rounded-lg"
+      >
+        <img
+          class="w-full sm:invisible"
+          src="./assets/illustration-sign-up-mobile.svg"
+          alt=""
+        />
+      </div>
+      <div
+        id="bottom-section"
+        class="py-8 px-5 sm:h-full sm:mx-4 sm:flex sm:flex-col sm:justify-center"
+      >
+        <h1 class="text-[#242742] text-3xl sm:font-extrabold font-bold mb-3">
+          Stay updated!
+        </h1>
+        <p class="w-full text-sm sm:text-xs font-medium sm:mb-3">
+          join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <p
+          class="w-full text-sm sm:text-xs font-medium flex items-start my-2 sm:my-1"
+        >
+          <img class="mr-3 w-4" src="./assets/icon-list.svg" alt="" /> product
+          discovery and building what matters
+        </p>
+        <p
+          class="w-full text-sm sm:text-xs font-medium flex items-start my-2 sm:my-1"
+        >
+          <img class="mr-3 w-4" src="./assets/icon-list.svg" alt="" /> measuring
+          to ensure updates are a success
+        </p>
+        <p
+          class="w-full text-sm sm:text-xs font-medium flex items-start my-2 sm:my-1"
+        >
+          <img class="mr-3 w-4" src="./assets/icon-list.svg" alt="" /> and much
+          more!
+        </p>
+        <div id="input-container" class="mt-8 w-full max-w-80">
+          <p class="sm:text-[11px] font-bold text-xs capitalize text-[#242742]">
+            email address
+          </p>
+          <input
+            class="border-2 rounded px-4 py-2 w-full mt-1.5 text-sm cursor-pointer"
+            type="email"
+            placeholder="email@company.com"
+          />
+        </div>
+        <div
+          id="subscrib-button"
+          class="bg-[#242742] text-white/85 capitalize text-sm text-center mt-4 px-3 py-3 rounded-md cursor-pointer max-w-80"
+        >
+          subscribe to monthly newsletter
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
