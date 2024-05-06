@@ -55,22 +55,32 @@
           <img class="mr-3 w-4" src="./assets/icon-list.svg" alt="" /> and much
           more!
         </p>
-        <div id="input-container" class="mt-8 w-full max-w-80">
-          <p class="sm:text-[11px] font-bold text-xs capitalize text-[#242742]">
-            email address
-          </p>
+        <div id="input-container" class="group mt-8 w-full max-w-80">
+          <div class="flex justify-between">
+            <p
+              class="sm:text-[11px] font-bold text-xs capitalize text-[#242742]"
+            >
+              email address
+            </p>
+            <p
+              class="invisible error:visible sm:text-[11px] font-bold text-xs capitalize text-red-400"
+            >
+              valid email required
+            </p>
+          </div>
           <input
-            class="border-2 rounded px-4 py-2 w-full mt-1.5 text-sm cursor-pointer"
+            class="error:bg-red-100 error:outline-red-300 outline-1 error:text-red-400 error:border-red-300 border-2 rounded px-4 py-2 w-full mt-1.5 text-sm cursor-pointer"
             type="email"
             placeholder="email@company.com"
           />
         </div>
-        <div
+        <a
+        href="./succes.html"
           id="subscrib-button"
-          class="bg-[#242742] text-white/85 capitalize text-sm text-center mt-4 px-3 py-3 rounded-md cursor-pointer max-w-80"
+          class="bg-[#242742] hover:bg-gradient-to-r from-[#FF5478] to-[#FF683E] text-white/85 capitalize text-xs font-bold text-center mt-4 px-3 py-3 rounded-md cursor-pointer max-w-80"
         >
           subscribe to monthly newsletter
-        </div>
+      </a>
       </div>
     </div>
   </body>
