@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,14 +14,14 @@
 
     <script src="index.js" defer></script>
   </head>
-  <body class="sm:h-screen sm:flex align-middle sm:px-4 sm:bg-[#242742]">
+  <body class="align-middle sm:flex sm:h-screen sm:bg-[#242742] sm:px-4">
     <div
       id="app-wraper"
-      class="mx-auto max-w-md text-[#36384e] sm:flex flex-row-reverse sm:items-center sm:max-w-2xl sm:h-2/3 sm:my-auto bg-white sm:p-4 sm:rounded-3xl"
+      class="mx-auto max-w-md flex-row-reverse bg-white text-[#36384e] sm:my-auto sm:flex sm:h-2/3 sm:max-w-2xl sm:items-center sm:rounded-3xl sm:p-4"
     >
       <div
         id="top-section"
-        class="rounded-b-xl relative sm:bg-[url('./assets/illustration-sign-up-desktop.svg')] bg-no-repeat bg-cover sm:max-w-[60%] sm:min-h-full rounded-lg"
+        class="relative rounded-lg rounded-b-xl bg-cover bg-no-repeat sm:min-h-full sm:max-w-[60%] sm:bg-[url('./assets/illustration-sign-up-desktop.svg')]"
       >
         <img
           class="w-full sm:invisible"
@@ -31,28 +31,28 @@
       </div>
       <form
         id="bottom-section"
-        class="py-8 px-5 sm:h-full sm:mx-4 sm:flex sm:flex-col sm:justify-center"
+        class="px-5 py-8 sm:mx-4 sm:flex sm:h-full sm:flex-col sm:justify-center"
       >
-        <h1 class="text-[#242742] text-3xl sm:font-extrabold font-bold mb-3">
+        <h1 class="mb-3 text-3xl font-bold text-[#242742] sm:font-extrabold">
           Stay updated!
         </h1>
-        <p class="w-full text-sm sm:text-xs font-medium sm:mb-3">
+        <p class="w-full text-sm font-medium sm:mb-3 sm:text-xs">
           join 60,000+ product managers receiving monthly updates on:
         </p>
         <p
-          class="w-full text-sm sm:text-xs font-medium flex items-start my-2 sm:my-1"
+          class="my-2 flex w-full items-start text-sm font-medium sm:my-1 sm:text-xs"
         >
           <img class="mr-3 w-4" src="./assets/icon-list.svg" alt="" /> product
           discovery and building what matters
         </p>
         <p
-          class="w-full text-sm sm:text-xs font-medium flex items-start my-2 sm:my-1"
+          class="my-2 flex w-full items-start text-sm font-medium sm:my-1 sm:text-xs"
         >
           <img class="mr-3 w-4" src="./assets/icon-list.svg" alt="" /> measuring
           to ensure updates are a success
         </p>
         <p
-          class="w-full text-sm sm:text-xs font-medium flex items-start my-2 sm:my-1"
+          class="my-2 flex w-full items-start text-sm font-medium sm:my-1 sm:text-xs"
         >
           <img class="mr-3 w-4" src="./assets/icon-list.svg" alt="" /> and much
           more!
@@ -60,28 +60,28 @@
         <div id="input-container" class="group mt-8 w-full max-w-80">
           <div class="flex justify-between">
             <p
-              class="sm:text-[11px] font-bold text-xs capitalize text-[#242742]"
+              class="text-xs font-bold capitalize text-[#242742] sm:text-[11px]"
             >
               email address
             </p>
             <p
-              class="invisible error:visible sm:text-[11px] font-bold text-xs capitalize text-red-400"
+              class="error:visible invisible text-xs font-bold capitalize text-red-400 sm:text-[11px]"
             >
               valid email required
             </p>
           </div>
           <input
-            class="error:bg-red-100 error:outline-red-300 outline-1 error:text-red-400 error:border-red-300 border-2 rounded px-4 py-2 w-full mt-1.5 text-sm cursor-pointer"
+            class="error:bg-red-100 error:outline-red-300 error:text-red-400 error:border-red-300 mt-1.5 w-full cursor-pointer rounded border-2 px-4 py-2 text-sm outline-1"
             type="email"
             placeholder="email@company.com"
           />
         </div>
         <button
           id="subscrib-button"
-          class="bg-[#242742] hover:bg-gradient-to-r from-[#FF5478] to-[#FF683E] text-white/85 capitalize text-xs font-bold text-center mt-4 px-3 py-3 rounded-md cursor-pointer max-w-80"
+          class="mt-4 max-w-80 cursor-pointer rounded-md bg-[#242742] from-[#FF5478] to-[#FF683E] px-3 py-3 text-center text-xs font-bold capitalize text-white/85 hover:bg-gradient-to-r"
         >
           subscribe to monthly newsletter
-      </button>
+        </button>
       </form>
     </div>
   </body>
