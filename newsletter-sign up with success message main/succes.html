@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>success</title>
-</head>
-<body>
-    <h1>success</h1>
-</body>
+    <link rel="stylesheet" href="output.css" />
+    <script src="succes.js" defer></script>
+  </head>
+  <body>
+    <div
+      id="success-wraper"
+      class="sm:bg-[#232742] h-screen sm:max-w-[100vw] max-w-screen-sm flex"
+    >
+      <main
+        class="bg-white p-4 sm:py-6 sm:px-8 sm:min-h-48 sm:rounded-3xl min-h-screen m-auto flex flex-col sm:justify-center justify-end text-[#232742]"
+      >
+        <div>
+          <img
+            class="w-12 mb-8 sm:mb-6"
+            src="./assets/icon-success.svg"
+            alt=""
+          />
+          <h1 class="text-3xl w-52 mb-6 sm:mb-3 font-bold">
+            Thanks for subscribing!
+          </h1>
+          <p class="text-sm w-64 sm:text-xs">
+            A confirmation email has been sent to
+            <span id="email-box" class="font-bold sm:font-extrabold"
+              >ash@loremcompany.com.</span
+            >
+            Please open it and click the button inside to confirm your
+            subscription
+          </p>
+        </div>
+        <button
+          class="bg-[#232742] hover:bg-gradient-to-r from-[#FF5478] to-[#FF683E] inline-block text-center capitalize text-sm font-bold py-2.5 rounded text-gray-50 w-full max-w-sm mt-60 sm:mt-4"
+          id="dismiss-button"
+        >
+          dismiss message
+        </button>
+      </main>
+    </div>
+  </body>
 </html>

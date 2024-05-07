@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="output.css" />
+
+    <script src="index.js" defer></script>
   </head>
   <body class="sm:h-screen sm:flex align-middle sm:px-4 sm:bg-[#242742]">
     <div
@@ -27,7 +29,7 @@
           alt=""
         />
       </div>
-      <div
+      <form
         id="bottom-section"
         class="py-8 px-5 sm:h-full sm:mx-4 sm:flex sm:flex-col sm:justify-center"
       >
@@ -74,14 +76,13 @@
             placeholder="email@company.com"
           />
         </div>
-        <a
-        href="./succes.html"
+        <button
           id="subscrib-button"
           class="bg-[#242742] hover:bg-gradient-to-r from-[#FF5478] to-[#FF683E] text-white/85 capitalize text-xs font-bold text-center mt-4 px-3 py-3 rounded-md cursor-pointer max-w-80"
         >
           subscribe to monthly newsletter
-      </a>
-      </div>
+      </button>
+      </form>
     </div>
   </body>
 </html>
