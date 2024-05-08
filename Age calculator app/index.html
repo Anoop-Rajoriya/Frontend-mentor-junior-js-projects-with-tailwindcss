@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div
+      id="app-wraper"
+      class="flex h-screen w-screen bg-[#F0F0F0] px-4 align-middle"
+    >
+      <main
+        class="m-auto w-full max-w-[388px] overflow-hidden rounded-2xl rounded-br-[94px] bg-[#FFFFFF] px-4 sm:max-w-[588px] sm:rounded-br-[144px] sm:px-8"
+      >
+        <form action="#">
+          <div id="input-sec" class="flex space-x-4 py-8">
+            <div id="input" class="error w-28 sm:w-32">
+              <label
+                for="day"
+                class="error:text-red-300 text-sm font-bold uppercase tracking-widest text-gray-700 sm:text-xs"
+                >Day</label
+              >
+              <input
+                id="day"
+                type="number"
+                class="error:border-red-300 h-14 w-full rounded-lg border-2 border-gray-400 px-3 text-2xl font-bold outline-none"
+                placeholder="DD"
+              />
+              <p
+                class="error:visible invisible mt-1 text-xs capitalize text-red-300"
+              >
+                must be a valid date
+              </p>
+            </div>
+            <div id="input" class="error w-28 sm:w-32">
+              <label
+                for="month"
+                class="error:text-red-300 text-sm font-bold uppercase tracking-widest text-gray-700 sm:text-xs"
+                >month</label
+              >
+              <input
+                id="month"
+                type="number"
+                class="error:border-red-300 h-14 w-full rounded-lg border-2 border-gray-400 px-3 text-2xl font-bold outline-none"
+                placeholder="MM"
+              />
+              <p
+                class="error:visible invisible mt-1 text-xs capitalize text-red-300"
+              >
+                must be a valid month
+              </p>
+            </div>
+            <div id="input" class="error w-28 sm:w-32">
+              <label
+                for="year"
+                class="error:text-red-300 text-sm font-bold uppercase tracking-widest text-gray-700 sm:text-xs"
+                >year</label
+              >
+              <input
+                id="year"
+                type="number"
+                class="error:border-red-300 h-14 w-full rounded-lg border-2 border-gray-400 px-3 text-2xl font-bold outline-none"
+                placeholder="YYYY"
+              />
+              <p
+                class="error:visible invisible mt-1 text-xs capitalize text-red-300"
+              >
+                must be in the past
+              </p>
+            </div>
+          </div>
+          <div
+            id="submit-sec"
+            class="after:contents-[''] relative flex justify-center py-1 after:absolute after:top-1/2 after:inline-block after:w-full after:-translate-y-1/2 after:border-2 sm:justify-end"
+          >
+            <button
+              class="z-10 flex h-16 w-16 items-center justify-center rounded-full bg-[#874CFE] hover:bg-black active:bg-black"
+            >
+              <img src="./assets/icon-arrow.svg" alt="submit" class="w-1/2" />
+            </button>
+          </div>
+        </form>
+        <div id="output-sec" class="pb-10">
+          <p class="my-2 text-5xl font-extrabold sm:text-7xl">
+            <span class="text-[#864CFF]">18 </span> years
+          </p>
+          <p class="my-2 text-5xl font-extrabold sm:text-7xl">
+            <span class="text-[#864CFF]">22 </span> months
+          </p>
+          <p class="my-2 text-5xl font-extrabold sm:text-7xl">
+            <span class="text-[#864CFF]">--</span> days
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
