@@ -9,36 +9,199 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="output.css" />
+    <script src="./nav.js" defer></script>
   </head>
   <body>
-    <div id="app-wraper" class="min-h-screen w-screen bg-[#FEFDF9]">
-      <header class="flex min-h-[96px] items-center justify-between px-4">
-        <div id="logo" class="w-12">
-          <img src="./assets/logo.svg" alt="page logo" />
-        </div>
+    <div id="app-wraper" class="max-w-screen min-h-screen bg-[#FEFDF9]">
+      <header class="fixed w-full bg-white/70 backdrop-blur">
+        <div
+          id="nav-wraper"
+          class="m-auto flex min-h-[96px] max-w-[1080px] items-center justify-between px-4"
+        >
+          <a id="logo" href="#" class="w-12">
+            <img src="./assets/logo.svg" alt="page logo" />
+          </a>
 
-        <nav>
-          <div id="nab-button" class="w-12">
-            <img src="./assets/icon-menu.svg" alt="menu-button" />
+          <div id="nav-open-btn" class="inline-block w-12 p-1 py-2 md:hidden">
+            <img src="./assets/icon-menu.svg" alt="menu-open-button" />
           </div>
-        </nav>
+
+          <nav
+            class="fixed inset-0 h-screen w-screen translate-x-full bg-black/50 opacity-0 transition-all md:static md:inline-block md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:opacity-100"
+          >
+            <div
+              id="nav-links"
+              class="ml-auto flex h-full w-3/5 translate-x-full flex-col space-y-4 bg-white px-4 py-6 text-lg font-bold capitalize text-gray-500 transition-transform md:inline-block md:w-auto md:translate-x-0 md:space-x-8 md:bg-transparent"
+            >
+              <div
+                id="nav-close-btn"
+                class="ml-auto inline-block w-10 p-1 md:hidden"
+              >
+                <img
+                  class="w-full"
+                  src="./assets/icon-menu-close.svg"
+                  alt="menu-close-button"
+                />
+              </div>
+              <a class="w-max px-1 hover:text-red-400" href="">home</a>
+              <a class="w-max px-1 hover:text-red-400" href="">new</a>
+              <a class="w-max px-1 hover:text-red-400" href="">popular</a>
+              <a class="w-max px-1 hover:text-red-400" href="">trending</a>
+              <a class="w-max px-1 hover:text-red-400" href="">categories</a>
+            </div>
+          </nav>
+        </div>
       </header>
 
-      <main class="px-4">
-        <div id="main-sec1">
+      <main
+        class="mx-auto grid max-w-[1080px] px-4 pt-[96px] md:grid-cols-3 md:grid-rows-3 md:items-start md:gap-4"
+      >
+        <div id="main-sec1" class="md:col-span-2 md:row-span-2">
           <div id="main-image">
-            <img src="./assets/image-web-3-mobile.jpg" alt="main sec img" />
+            <img
+              class="md:hidden"
+              src="./assets/image-web-3-mobile.jpg"
+              alt="main sec img"
+            />
+            <img
+              class="hidden md:inline-block"
+              src="./assets/image-web-3-desktop.jpg"
+              alt="main sec img"
+            />
           </div>
-          <div id="main-text">
-            <h1>the bright future of web 3.0?</h1>
+          <div id="main-text" class="space-x-3 md:flex">
+            <h1
+              class="my-4 max-w-[82%] text-4xl font-extrabold capitalize md:my-6 md:max-w-[49%] md:flex-shrink-0 md:text-[2.90rem] md:leading-[2.9rem] lg:text-6xl"
+            >
+              the bright future of web 3.0?
+            </h1>
             <section>
-              <p>
+              <p
+                class="mb-4 text-base text-gray-500 md:mt-6 md:text-sm lg:text-base"
+              >
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <button>read more</button>
+              <button
+                class="w-[60%] max-w-[180px] bg-red-400 py-3 text-sm font-semibold uppercase tracking-[.2em] text-white hover:bg-black hover:text-white md:text-xs md:font-normal"
+              >
+                read more
+              </button>
             </section>
+          </div>
+        </div>
+        <div
+          id="main-sec2"
+          class="my-14 bg-[#00001A] p-6 text-white md:row-span-2 md:my-0 md:p-5"
+        >
+          <p class="mb-8 text-3xl font-bold text-[#EAAC55] md:mb-3 lg:mb-6">
+            New
+          </p>
+          <div class="border-b-[1.7px] border-gray-500 pb-6 md:pb-3 lg:pb-4">
+            <p
+              class="mb-1 cursor-pointer text-xl font-bold hover:text-[#EAAC55] md:text-base md:font-semibold lg:text-2xl"
+            >
+              Hydrogen VS Electric Cars
+            </p>
+            <p
+              class="text-base font-light text-gray-400 md:text-sm md:font-extralight lg:text-base"
+            >
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div
+            class="mt-6 border-b-[1.7px] border-gray-500 pb-6 md:mt-3 md:pb-3 lg:pb-4"
+          >
+            <p
+              class="mb-1 cursor-pointer text-xl font-bold hover:text-[#EAAC55] md:text-base md:font-semibold lg:text-2xl"
+            >
+              The Downsides of AI Artistry
+            </p>
+            <p
+              class="text-base font-light text-gray-400 md:text-sm md:font-extralight lg:text-base"
+            >
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="mt-6 pb-6 md:mt-3 lg:pb-4">
+            <p
+              class="mb-1 cursor-pointer text-xl font-bold hover:text-[#EAAC55] md:text-base md:font-semibold lg:text-2xl"
+            >
+              Is VC Funding Drying Up?
+            </p>
+            <p
+              class="text-base font-light text-gray-400 md:text-sm md:font-extralight lg:text-base"
+            >
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+        <div
+          id="main-sec3"
+          class="space-y-8 pb-16 md:col-span-3 md:flex md:items-start md:space-x-3 md:space-y-0 md:pb-0"
+        >
+          <div id="card" class="flex md:w-[32.5%] md:min-w-[238px] md:py-1">
+            <div id="img" class="mr-4 w-[108px] shrink-0 md:mr-3 md:w-[78px]">
+              <img src="./assets/image-retro-pcs.jpg" />
+            </div>
+            <div id="card-text">
+              <p
+                class="text-4xl font-bold text-gray-400/80 md:text-2xl md:font-semibold"
+              >
+                01
+              </p>
+              <p
+                class="my-2 cursor-pointer text-lg font-extrabold hover:text-red-400 md:my-1 md:text-sm"
+              >
+                Reviving Retro PCs
+              </p>
+              <p class="text-base text-gray-600 md:text-xs">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <div id="card" class="flex md:w-[32.5%] md:min-w-[238px] md:py-1">
+            <div id="img" class="mr-4 w-[108px] shrink-0 md:mr-3 md:w-[78px]">
+              <img src="./assets/image-top-laptops.jpg" />
+            </div>
+            <div id="card-text">
+              <p
+                class="text-4xl font-bold text-gray-400/80 md:text-2xl md:font-semibold"
+              >
+                02
+              </p>
+              <p
+                class="my-2 cursor-pointer text-lg font-extrabold hover:text-red-400 md:my-1 md:text-sm"
+              >
+                Top 10 Laptops of 2022
+              </p>
+              <p class="text-base text-gray-600 md:text-xs">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div id="card" class="flex md:w-[32.5%] md:min-w-[238px] md:py-1">
+            <div id="img" class="mr-4 w-[108px] shrink-0 md:mr-3 md:w-[78px]">
+              <img src="./assets/image-gaming-growth.jpg" />
+            </div>
+            <div id="card-text">
+              <p
+                class="text-4xl font-bold text-gray-400/80 md:text-2xl md:font-semibold"
+              >
+                03
+              </p>
+              <p
+                class="my-2 cursor-pointer text-lg font-extrabold hover:text-red-400 md:my-1 md:text-sm"
+              >
+                The Growth of Gaming
+              </p>
+              <p class="text-base text-gray-600 md:text-xs">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
           </div>
         </div>
       </main>
