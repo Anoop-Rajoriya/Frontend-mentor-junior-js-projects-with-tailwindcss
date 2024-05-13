@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notifications</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div id="app-wraper" class="min-h-screen w-screen bg-[#F6FAFD] ">
+      <main class="mx-auto w-full max-w-[488px] min-h-screen md:min-h-[568px] bg-white p-3">
+        <div id="top-bar" class="flex mb-6 items-center justify-between">
+          <h1 class="text-base font-bold">
+            Notifications
+            <span
+              class="ml-1 rounded-md bg-[#0A3374] px-2 text-sm font-light text-white"
+              >3</span
+            >
+          </h1>
+          <a class="text-xs capitalize text-[#0A3374]" href="#"
+            >mark all as read</a
+          >
+        </div>
+        <div id="notifications-container" class="space-y-4">
+
+          <div id="notification" class="bg-[#F6FAFD] flex p-2 rounded-md">
+            <div id="img" class="w-10 rounded-full shrink-0 mr-2">
+              <img src="./assets/avatar-mark-webber.webp" alt="user image" />
+            </div>
+            <div id="text" class=" text-xs">
+              <p class="align-middle">
+                <span id="name" class=" font-extrabold capitalize">mark webber</span>
+                <span id="message" class="text-blue-950 font-medium">
+                  react to your recent post
+                  <span class="font-bold capitalize">my first tournament today!</span>
+                </span>
+                <span id="red-dot" class="bg-red-600 inline-block w-2 h-2 rounded-full"></span>
+              </p>
+              <div id="noti-time" class="text-xs mt-1 text-blue-950/70">1m ago</div>
+            </div>
+          </div>
+          <div id="notification" class="bg-[#F6FAFD] flex p-2 rounded-md">
+            <div id="img" class="w-10 rounded-full shrink-0 mr-2">
+              <img src="./assets/avatar-angela-gray.webp" alt="user image" />
+            </div>
+            <div id="text" class=" text-xs">
+              <p class="align-middle">
+                <span id="name" class=" font-extrabold capitalize">angela gray</span>
+                <span id="message" class="text-blue-950 font-medium">followed you <span class="font-bold capitalize"></span></span>
+                <span id="red-dot" class="bg-red-600 inline-block w-2 h-2 rounded-full"></span>
+              </p>
+              <div id="noti-time" class="text-xs mt-1 text-blue-950/70">5m ago</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
